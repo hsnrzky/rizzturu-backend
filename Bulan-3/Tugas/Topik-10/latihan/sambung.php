@@ -12,24 +12,26 @@ class ConnectPDO {
     public function CreateData(){
         //Code
         $namabarang = $_POST["namaBarang"];
-        $query = "INSERT INTO brang(namaBarang) VALUES ('$namabarang')";
+        $hargabarang = $_POST["hargaBarang"];
+        $query = "INSERT INTO brang(namaBarang,hargaBarang) VALUES ('$namabarang','$hargabarang')";
         $data = $this->db->prepare($query);
         $data->execute();
 
         header("Location:post.php");
     }
-    public function DeleteData(){
-        $id = $_POST["Id"];
-        $query = "DELETE FROM brang WHERE Id = $id";
+    public function DeleteData($id){
+
+        $query = "DELETE FROM `brang` WHERE Id = '$id'";
         $data = $this->db->prepare($query);
         $data->execute();
 
         header("Location:post.php");
     }
     public function UpdateData(){
-        $namabarang = $_POST["namaBarang"];
-        $id = $_POST["Id"];
-        $query = "UPDATE brang SET namaBarang='$namabarang' WHERE Id = $id";
+        $namabarang = $_GET["namaBarang"];
+        $hargabarang = $_GET["hargaBarang"];
+        $id = $_GET["Id"];
+        $query = "UPDATE brang SET `namaBarang`='$namabarang', `hargaBarang`='$hargabarang' WHERE Id = '$id'";
         $data = $this->db->prepare($query);
         $data->execute();
 
@@ -47,12 +49,10 @@ class ConnectPDO {
     }
 }
 $pdo = new ConnectPDO();
-if(isset($_POST["submit"])){
+if(isset($_POST["create"])){
     $pdo->CreateData();
 }
-if(isset($_POST["delete"])){
-    $pdo->DeleteData();
-}
-if(isset($_POST["update"])){
+
+if(isset($_GET["update"])){
     $pdo->UpdateData();
 }

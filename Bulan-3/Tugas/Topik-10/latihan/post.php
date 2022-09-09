@@ -17,22 +17,17 @@ $barang = $pdo->GetData();
 
     <label for="namaBarang">Nama Barang</label>
     <input type="text" name="namaBarang" placeholder="Nama Barang">
-    <button type="submit" name="submit">Kirim!</button>
+    <label for="namaBarang">Harga Barang</label>
+    <input type="text" name="hargaBarang" placeholder="Harga Barang">
+    <button type="submit" name="create">Kirim!</button>
     <br><br>
-    <label for="namaBarang">Hapus Barang</label>
-    <input type="text" name="Id" placeholder="Masukan Id!">
-    <button type="submit" name="delete">Hapus!</button>
-    <br><br>
-    <label for="namaBarang">Update Barang</label>
-    <input type="text" name="namaBarang" placeholder="Ganti Barang!">
-    <input type="text" name="Id" placeholder="Id?">
-    <button type="submit" name="update">Update!</button>
     </form>
-    <br><br>
-    <table class="table-post" border="1" cellspacing="0" cellpadding="5">
+    <table class="table-post" border="1" cellspacing="0" cellpadding="15">
         <thead class="post">
             <th>No</th>
             <th>Nama Barang</th>
+            <th>Harga Barang</th>
+            <th>Action</th>
         </thead>
         <tbody>
             <?php $no = 1 ?>
@@ -40,6 +35,9 @@ $barang = $pdo->GetData();
             <tr>
                 <td><?= $no; ?></td>
                 <td><?= $item['namaBarang']; ?></td>
+                <td><?= $item['hargaBarang'] ?></td>
+                <td> <a href="hapus.php?Id=<?= $item['Id']?>"><input type="submit" value="Hapus"></a>
+                <a href="update.php?Id=<?= $item['Id'] ?>"><input type="submit" value="Update" name=update></a></td>
             </tr>
             <?php $no++; ?>
             <?php endforeach; ?>
