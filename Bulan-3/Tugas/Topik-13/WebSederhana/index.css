@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 8%;
+    padding-left: 10%;
+    background-color: #abc;
+    justify-content: flex-end;
+}
+nav a {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: rgb(100, 100, 255);
+    border: 2px solid transparent;
+    border-radius:10px ;
+    transition: transform .4s;
+    padding: 5px 10px;
+}
+nav a:hover {
+    transform: scale(1.1);
+}
+.mine{
+    margin-right: 20px;
+}
+.create{
+    margin-right: 20px;
+}
+.allin{
+    display: flex;
+}
+.allin div{
+    top: 10%;
+}
+.allin div h2 span{
+    color: royalblue  ;
+}
+.knama{
+    text-align: center;
+    border: 2px solid #aaa;
+    background-color: #eee;
+    position: absolute;
+    width: 17%;
+    height: auto;
+    margin: 20px 30px;
+    border-radius: 10px;
+}
+.art{
+    position: absolute;
+    left: 20%;
+    display: block;
+}
+.kart{
+    border: 2px solid #aaa;
+    background-color: #eee;
+    width: auto;
+    height: auto;
+    margin: 20px 40px;
+    text-align: right;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.kart div{
+    background-color: #aaa;
+    text-align: center;
+    padding: 5px 5px;
+}
+.kart p{
+    text-indent: 2rem;
+    text-align: left;
+    margin: 10px;
+}
+.kart h6 {
+    text-align: left;
+    margin: -3px 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.kart a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    background-color: #aaa;
+    padding: 5px 20px;
+    margin: 40px;
+    border-radius: 20px;
+    font-weight:lighter;
+}

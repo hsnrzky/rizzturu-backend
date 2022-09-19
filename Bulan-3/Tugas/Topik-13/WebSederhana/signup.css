@@ -1,0 +1,132 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.wellcome{
+    text-align: center;
+    margin-top: 50px;
+}
+.turu{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform .4s;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.turu span{
+    color: rgb(125, 125, 125);
+}
+.login {
+    margin: auto;
+    padding-left:40px ;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    display: block;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+
+}
+.divwell{
+    background-color: #fff;
+    border: 1px solid rgb(94, 93, 93);
+    margin-top: -20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px #bbb;
+}
+.fwell{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px auto;
+}
+.divuser{
+    display: flex;
+    background-color: #eee;
+    height: 30px;
+    margin-top: 30px;
+}
+.fuser {
+    margin:auto;
+    background-color: #eee;
+    margin-left: 0px;
+
+}
+.inputuser {
+    margin: 3px 20px;
+    margin-left: 50px;
+    border: 1px solid rgb(97, 97, 97);
+    border-radius: 3px;
+    margin-right: 0px;    
+    box-shadow: 1px 1px 15px #bbb;
+}
+.divmail{
+    display: flex;
+    background-color: #eee;
+    text-align: left;
+    height: 30px;
+    margin-top: 15px;
+}
+.fmail{
+    margin: auto;
+    margin-left: 0;
+    display: block;
+    background-color: #eee;
+}
+.inputmail{
+    margin: 3px 20px;
+    border: 1px solid rgb(97, 97, 97);
+    margin-right: 0px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 15px #bbb;
+
+}
+.divpass{
+    display: flex;
+    background-color: #eee;
+    text-align: left;
+    height: 30px;
+    margin-top: 15px;
+}
+.fpass {
+    margin: auto;
+    margin-left: 0;
+    display: block;
+    background-color: #eee;
+}
+.inputpass{
+    margin: 3px 20px;
+    border: 1px solid rgb(97, 97, 97);
+    margin-right: 0px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 15px #bbb;
+
+}
+.buat{
+    background-color: #eee;
+    margin-top: 30px;
+}
+.cbutton{
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    border-radius: 5px;
+    border: 2px solid rgb(97, 97, 97);
+}
+.divregis{
+    background-color: #eee;
+    margin-top: 30px;
+    text-align: center;
+}
+.rebutt{
+    background-color: #eee;
+    font-size: 14px;
+}
