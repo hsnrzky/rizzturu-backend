@@ -1,0 +1,15 @@
+{
+    "name": "pai/topik-16",
+    "autoload": {
+        "psr-4": {
+            "Pai\\Topik16\\Tugas\\BangunDatar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rizzturu13",
+            "email": "hasanrizky0405@gmail.com"
+        }
+    ],
+    "require": {}
+}
