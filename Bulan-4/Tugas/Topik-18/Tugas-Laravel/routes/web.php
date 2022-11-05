@@ -16,7 +16,7 @@ use App\Http\Controllers\BarangController;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home",
+        "title" => "Gudang",
         "posisi" => "absolute"
     ]);
 });
@@ -35,6 +35,7 @@ Route::get('edit/{id}', [
 Route::post('update', [
     BarangController::class, 'update'
 ]);
-Route::post('barang',[
-    BarangController::class, 'src'
+Route::get('search',[
+    BarangController::class, 'search'
 ]);
+Route::view('welcome', 'welcome');
