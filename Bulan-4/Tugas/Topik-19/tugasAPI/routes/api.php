@@ -1,10 +1,12 @@
 <?php
 
-use App\Http\Controllers\APIController;
-use App\Http\Controllers\BarangController;
 use App\Models\barang;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\APIController;
+use App\Http\Controllers\BarangController;
+use App\Mail\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +29,10 @@ Route::get('/', [APIController::class, 'home']);
 Route::post('/register', [APIController::class, 'register']);
 //API route for login user
 Route::post('/login', [APIController::class, 'login']);
-
+//Route for maill
+Route::get('/email', function() {
+    Mail::to("alwi.irfani1927@gmail.com")->send(new User());
+});
 
 //Protecting Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
@@ -43,7 +48,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     //Route group create, delete and update
     Route::post('/create', [BarangController::class, 'create']);
-    Route::post('/delete', [BarangController::class, 'delete']);
+    Route::delete('/delete/{id}', [BarangController::class, 'delete']);
     Route::post('/update/{id}', [BarangController::class, 'update']);
 });
 

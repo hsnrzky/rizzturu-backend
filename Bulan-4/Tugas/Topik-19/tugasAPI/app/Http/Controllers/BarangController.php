@@ -24,9 +24,9 @@ class BarangController extends Controller
             "show" => $this->show()
         ], 200);
     }
-    public function delete(Request $request)
+    public function delete($id)
     {
-        barang::destroy($request->id);
+        barang::destroy($id);
         return response()->json([
             "status" => "The data was successfully deleted",
             "show" => $this->show()
@@ -34,10 +34,11 @@ class BarangController extends Controller
     }
     public function update(Request $request, $id)
     {
+        $show = $request->all();
         barang::findorfail($id)->update($request->all());
         return response()->json([
             "status" => "The data was successfully updated",
-            "show" => $this->show(),
+            "show" => $show,
         ]);
     }
 

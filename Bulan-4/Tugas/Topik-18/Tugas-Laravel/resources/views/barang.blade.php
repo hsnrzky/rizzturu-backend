@@ -67,20 +67,20 @@
                 <div class="modal-dialog ">
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
-                    <h1 class="modal-title fs-5 " id="tambahModalLabel" style="color: whitesmoke">Tambah Barang</h1>
+                    <h1 class="modal-title fs-5 " id="tambahModalLabel" style="color: #F6F6C9">Tambah Barang</h1>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label for="namaBarang" class="form-label" style="color: whitesmoke">Nama Barang</label>
-                            <input type="text" class="form-control" id="namaBarang" name="namabarang" >
+                            <label for="namaBarang" class="form-label" style="color: #F6F6C9">Nama Barang</label>
+                            <input type="text" class="form-control" id="namaBarang" name="namabarang" style="text-align: center">
                         </div>
                         <div class="mb-3">
-                            <label for="hargaBarang" class="form-label" style="color: whitesmoke">Harga Barang</label>
+                            <label for="hargaBarang" class="form-label" style="color: #F6F6C9">Harga Barang</label>
                             <input type="number" class="form-control" id="hargaBarang" name="hargabarang">
                         </div>
                         <div class="mb-3">
-                            <label for="jumlahBarang" class="form-label" style="color: whitesmoke">Jumlah Barang</label>
+                            <label for="jumlahBarang" class="form-label" style="color: #F6F6C9">Jumlah Barang</label>
                             <input type="number" class="form-control" id="jumlahBarang" name="jumlahbarang">
                         </div>
                     </div>

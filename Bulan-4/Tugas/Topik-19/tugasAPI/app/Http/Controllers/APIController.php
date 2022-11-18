@@ -63,11 +63,9 @@ class APIController extends Controller
     }
     public function home()
     {
-        $show = new BarangController;
         return response()
             ->json([
-               'message' => 'Welcome to home page',
-               'show' => $show->show()
+               'message' => 'Welcome to home page'
             ], 200);
     }
 }

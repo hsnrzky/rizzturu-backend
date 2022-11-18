@@ -28,16 +28,74 @@
         }
 
         .custom-shape-divider-bottom-1666701368 .shape-fill {
-            fill: #5A5252;
+            fill: #BAD1C2;
         }
+        .body {
+            background-color: #F6F6C9;
+        }
+        .dark {
+            background-color: #153462;
+            color: #F6F6C9
+        }
+        .switch {
+            position: relative;
+            display:inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        .switch input {
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            right: 0;
+            bottom: 0;
+            background-color: #4FA095;
+            border-radius: 34px;
+            -webkit-transition: .4s;
+            transition:.4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            left: 3px;
+            bottom: 3px;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background-color: #6d7889;
+            -webkit-transition:.4s;
+            transition: .4s;
+        }
+        input:checked+.slider {
+            background-color: #F6F6C9;
+        }
+        input:focus+.slider {
+            box-shadow: 0 0 1px #F6F6C9;
+        }
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
     </style>
 </head>
 <body>
 <div class="container-sm">
 <div class="container-xl mt-5">
     <div class="col-10 mx-auto text-center">
-        <div class="alert alert-dark">
-        <h3>Ubah Barang</h3>
+        <div class="alert " style="background-color: #BAD1C2">
+        <h3 style="color: black">Ubah Barang</h3>
+        <label class="switch">
+            <input type="checkbox" id='input' >
+            <span class="slider"></span>
+        </label>
         </div>
             <form action="{{ url('update') }}" method="POST">
                 @csrf
