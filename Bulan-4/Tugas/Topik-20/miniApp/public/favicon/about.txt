@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rubik Marker Hatch
+- Font Author: Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)
+- Font Source: http://fonts.gstatic.com/s/rubikmarkerhatch/v1/QldTNSFQsh0B_bFXXWv6LAt-jswapJHQDL4iw0H6zw.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
